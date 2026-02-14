@@ -77,4 +77,6 @@ ehthumbs.db
 Thumbs.db
 
 # Logs
-*.log
+*.log.env
+oauth_creds.json
+.venv/

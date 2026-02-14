@@ -8,7 +8,7 @@ import os
 CODE_ASSIST_ENDPOINT = "https://cloudcode-pa.googleapis.com"
 
 # Client Configuration
-CLI_VERSION = "0.1.5"  # Match current gemini-cli version
+CLI_VERSION = "0.28.2"  # Match current gemini-cli version
 
 # OAuth Configuration
 CLIENT_ID = "681255809395-oo8ft2oprdrnp9e3aqf6av3hmdib135j.apps.googleusercontent.com"

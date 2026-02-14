@@ -1,6 +1,6 @@
-fastapi
-uvicorn[standard]
-requests
-python-dotenv
-google-auth-oauthlib
-pydantic
+fastapi==0.129.0
+uvicorn[standard]==0.40.0
+requests==2.32.5
+python-dotenv==1.2.1
+google-auth-oauthlib==1.2.4
+pydantic==2.12.5
