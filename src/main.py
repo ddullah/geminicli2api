@@ -140,4 +140,16 @@ async def health_check():
     return {"status": "healthy", "service": "geminicli2api"}
 
 app.include_router(openai_router)
+
+
+# --- Account Rotation Stats (before gemini catch-all) ---
+
+@app.get("/stats")
+async def rotation_stats():
+    """Account rotation statistics for monitoring. No auth required (loopback-only)."""
+    from .account_rotator import get_rotator
+    rotator = get_rotator()
+    return rotator.get_stats()
+
+
 app.include_router(gemini_router)

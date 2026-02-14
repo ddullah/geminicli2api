@@ -8,7 +8,8 @@ import logging
 from fastapi import APIRouter, Request, Response, Depends
 
 from .auth import authenticate_user
-from .google_api_client import send_gemini_request, build_gemini_payload_from_native
+from .google_api_client import build_gemini_payload_from_native
+from .rotated_client import send_rotated_request as send_gemini_request
 from .config import SUPPORTED_MODELS
 
 router = APIRouter()

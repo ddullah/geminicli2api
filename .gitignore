@@ -79,4 +79,6 @@ Thumbs.db
 # Logs
 *.log.env
 oauth_creds.json
+credentials/
 .venv/
+__pycache__/
